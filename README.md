@@ -45,7 +45,7 @@ This command will unblock all websites listed in the `arr` variable by removing 
 Run the following command, replacing `example.com` with the actual website you want to add:
 
 ```bash
-sudo block_websites add <span style="color:red">example.com</span>
+sudo block_websites add example.com
 ```
 
 This command will update the script file, adding the new website to the `arr` variable. To block the newly added website, run the `sudo block_websites on` command again.
@@ -55,7 +55,7 @@ This command will update the script file, adding the new website to the `arr` va
 Run the following command, replacing `example.com` with the actual website you want to remove:
 
 ```bash
-sudo block_websites remove <span style="color:red">example.com</span>
+sudo block_websites remove example.com
 ```
 
 This command will update the script file, removing the website from the `arr` variable. To unblock the removed website, run the `sudo block_websites off` command again.
