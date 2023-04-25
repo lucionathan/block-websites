@@ -26,6 +26,11 @@ Now you can use the `block_websites` command instead of the script path.
 Run the following command:
 
 ```bash
+sudo ./block_websites on
+```
+or, if you created a symbolic link:
+
+```bash
 sudo block_websites on
 ```
 
@@ -36,13 +41,26 @@ This command will block all websites listed in the `arr` variable inside the scr
 Run the following command:
 
 ```bash
+sudo ./block_websites off
+```
+
+or, if you created a symbolic link:
+
+```bash
 sudo block_websites off
 ```
+
 This command will unblock all websites listed in the `arr` variable by removing their entries from the `/etc/hosts` file.
 
 ### To add a new website to the list:
 
 Run the following command, replacing `example.com` with the actual website you want to add:
+
+```bash
+sudo ./block_websites add example.com
+```
+
+or, if you created a symbolic link:
 
 ```bash
 sudo block_websites add example.com
@@ -53,6 +71,12 @@ This command will update the script file, adding the new website to the `arr` va
 ### To remove a website from the list:
 
 Run the following command, replacing `example.com` with the actual website you want to remove:
+
+```bash
+sudo ./block_websites remove example.com
+```
+
+or, if you created a symbolic link:
 
 ```bash
 sudo block_websites remove example.com
